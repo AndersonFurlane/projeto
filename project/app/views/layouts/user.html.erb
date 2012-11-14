@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Seu Remedio - Lembretes</title>
+    <%= stylesheet_link_tag    "application", :media => "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+
+    <div id = "content_user">
+
+      <div id = "top_user">
+        <!--LOGO -->
+        Bem Vindo<br />
+        Anderson Furlane Martins<br />
+        Você possui X lembretes
+      </div>
+      <p></p>
+      <div id = "left_column">
+        <d1>
+          <dt>Home</dt>
+          <dt>Lembretes</dt>
+            <dd>Adicionar Lembretes</dd>
+            <dd>Editar Lembretes</dd>
+            <dd>Excluir Lembretes</dd>
+            <dd>Visualizar Lembretes</dd>
+          <dt>Cadastro</dt>
+            <dd>Editar Cadastro</dd>
+          <dt>Contato</dt>
+        </d1>
+      </div>
+      <p></p>
+      <div id = "right_column">
+        <%= yield %>
+      </div>
+    </div>
+
+    <div id="footer">
+        <p>Todos os Direitos Reservados - Seu Remedio - 2012</p>
+    </div>
+  </body>
+</html>
